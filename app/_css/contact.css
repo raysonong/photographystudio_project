@@ -1,0 +1,75 @@
+/* Content */
+#content {
+    text-align: center;
+}
+
+#contact-info, #contact-operatingDay, #contact-location {
+    margin-bottom: 50px;
+}
+
+#contactinfo-map {
+	width: 100%;
+    height: 350px;
+}
+
+textarea {
+    font-family: inherit;
+    resize: none;
+    min-height: 200px;
+}
+
+#contact-email, #contact-contactno, #contact-subject {
+    margin-bottom: 20px;
+}
+
+#contact-message {
+    margin-bottom: 30px;
+}
+
+#content-contactForm {
+    text-align: left;
+}
+
+/* For screen width of 700px and above */
+@media screen and (min-width: 700px) {
+    /* Content */
+    #content-contact {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 50px 30px;
+    }
+    
+    #contact-info, #contact-operatingDay, #contact-location {
+        margin-bottom: 0px;
+    }
+
+    #contact-location {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* For screen width of 1180px and above */
+@media screen and (min-width: 1180px) {
+    /* Content */
+    #content {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    
+    #content, #content h2 {
+        text-align: left;
+    }
+    
+    #content-contact {
+        padding-right: 50px;
+        border-right: 1px solid #4d4d4d;
+    }
+    
+    #content-contactForm {
+        padding-left: 50px;
+    }
+    
+    #content hr {
+        display: none;
+    }
+}

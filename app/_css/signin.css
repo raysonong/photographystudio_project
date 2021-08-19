@@ -1,0 +1,27 @@
+#content-signin {
+    max-width: 430px;
+    margin: 0px auto;
+}
+
+#signin-email, #signin-password, #btn-signin, label {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+}
+
+#btn-signin {
+    margin-top: 10px;
+}
+
+#content-notmember {
+    font-size: 14px;
+}
+
+/* For screen width of 700px and above */
+@media screen and (min-width: 700px) {
+    #content {
+        padding: 90px 50px;
+    }
+}

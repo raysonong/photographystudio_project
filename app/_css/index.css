@@ -1,0 +1,110 @@
+/* Hero */
+#hero {
+    min-height: 500px;
+    background-image: url(../_images/photos/camerabg.jpg);
+    background-position: 50% 60%;
+}
+
+#hero h1 {
+    margin-bottom: 30px;
+}
+
+/* Content */
+#content {
+    text-align: center;
+}
+
+#content-benefits article:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+#content-benefits img {
+    margin-bottom: 30px;
+}
+
+#content-photo img {
+    width: 100%;
+    max-width: 600px;
+}
+
+#content-photo img:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* For screen width of 700px and above */
+@media screen and (min-width: 700px) {
+    /* Content */
+    #content-benefits, #content-photo {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 20px;
+    }
+    
+    #content-benefits h2, #content-photo h2 {
+        grid-column: 1 / span 2;
+        margin-bottom: 10px;
+    }
+    
+    #content-benefits article:not(:last-child), #content-photo img:not(:last-child) {
+        margin-bottom: 0px;
+    }
+}
+
+/* For screen width of 768px and above */
+@media screen and (min-width: 768px) {
+    /* Header */
+    #hero {
+        background-position: 30% 60%;
+    }
+}
+
+/* For screen width of 980px and above */
+@media screen and (min-width: 980px) {
+    /* Header */
+    #hero {
+        background-position: 10% 60%;
+        background-size: auto 220%;
+    }
+}
+
+/* For screen width of 1024px and above */
+@media screen and (min-width: 1024px) {
+    /* Content */
+    #content-benefits {
+        grid-gap: 30px;
+    }
+    
+    #content-benefits h2 {
+        margin-bottom: 0px;
+    }
+    
+    #content-photo {
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 30px;
+    }
+    
+    #content-photo h2 {
+        grid-column: 1 / span 3;
+        margin-bottom: 0px;
+    }
+}
+
+/* For screen width of 1225px and above */
+@media screen and (min-width: 1225px) {
+    /* Content */
+    #content-benefits {
+        grid-template-columns: repeat(4, auto);
+    }
+    
+    #content-benefits h2 {
+        grid-column: 1 / span 4;
+    }
+}
+
+/* For screen width of 1366px and above */
+@media screen and (min-width: 1366px) {
+    /* Hero */
+    #hero h1 {
+        margin-bottom: 40px;
+    }
+}

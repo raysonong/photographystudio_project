@@ -1,0 +1,95 @@
+#content {
+    padding: 0px;
+}
+
+#content-editbooking {
+    padding: 50px;
+}
+
+#editbooking-list {
+    width: 100%;
+    padding: 15px;
+}
+
+#editbooking-list th, #editbooking-list td {
+    padding: 5px;
+}
+
+#editbooking-header {
+    background-color: #f77d1e;
+    color: white;
+}
+
+.editbtn, .deletebtn {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    margin: 0px 5px;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: background-image 0.3s;
+    display: block;
+}
+
+.editbtn {
+    background-image: url(../_images/icons/misc/edit_btn.png);
+}
+
+.editbtn:hover, .editbtn:active {
+    background-image: url(../_images/icons/misc/edit_btn_hover.png);
+}
+
+.deletebtn {
+    background-image: url(../_images/icons/misc/delete_btn.png);
+}
+
+.deletebtn:hover, .deletebtn:active {
+    background-image: url(../_images/icons/misc/delete_btn_hover.png);
+}
+
+
+tbody {
+    border-bottom: 1.5px solid #717171;
+}
+
+#editbooking-totalprice {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+}
+
+/* For screen width of 768px and above */
+@media screen and (min-width: 768px) {
+    #content {
+        display: grid;
+        grid-template-columns: 250px auto auto auto;
+        min-height: 480px;
+    }
+    
+    #content h2 {
+        text-align: left;
+    }
+    
+    #content-editbooking {
+        margin: 0px;
+        grid-column: 2 / span 3;
+        min-width: 400px;
+        max-width: none;
+    }
+}
+
+/* For screen width of 980px and above */
+@media screen and (min-width: 980px) {
+    #content-editbooking {
+        padding: 50px 100px;
+    }
+}

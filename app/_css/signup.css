@@ -1,0 +1,68 @@
+#content-signup {
+    max-width: 430px;
+    margin: 0px auto;
+}
+
+#signup-name, #signup-gender, #signup-email, #signup-contactno, #signup-password {
+    margin-bottom: 20px;
+}
+
+#signup-cfmpassword {
+    margin-bottom: 30px;
+}
+
+#signup-profileicon section {
+    margin: 0px auto;
+    position: relative;
+    max-width: 120px;
+}
+
+#signup-profileicon {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#image-profileicon {
+    border-radius: 100%;
+    border: 1.5px solid #949494;
+    background-image: url(../_images/icons/misc/default_profile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+}
+
+label[for="btn-profileicon"] {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../_images/icons/misc/edit_profile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    right: 0px;
+    bottom: 0px;
+    text-indent: -9999px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#signup-name section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-firstname {
+    width: 70%;
+    margin-right: 10px;
+}
+
+#input-lastname {
+    width: 30%;
+}
